@@ -1,10 +1,14 @@
 {
-    "name": "blog",
-    "version": "1.0.0",
-    "description": "BrewfectionDeploy",
-    "author": "CodeDevils",
-    "private": true,
-    "scripts": {
-      "postinstall": "npm install express"
-    }
-   }
+  "name": "brewfection",
+  "version": "1.0.0",
+  "description": "BrewfectionDeploy",
+  "author": "CodeDevils",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install express"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "pg": "6.x"
+  }
+}
