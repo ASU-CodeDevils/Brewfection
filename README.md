@@ -1,4 +1,4 @@
-# vueapp1
+# Brewfection
 
 > A Vue.js project
 
