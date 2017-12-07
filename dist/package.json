@@ -5,7 +5,7 @@
   "author": "CodeDevils",
   "private": true,
   "scripts": {
-    "postinstall": "npm install express"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.16.2",
