@@ -19,7 +19,7 @@ app.get('/db', function (request, response) {
         if (err)
             { console.error(err); response.send("Error " + err); }
         else
-            { console.error(res.rows); response.send("hops \n" + res.rows); }
+            { console.error(res.rows); response.send("hops \n" + JSON.stringify(res.rows)); }
     });
 });
 var port = process.env.PORT || 5000;
