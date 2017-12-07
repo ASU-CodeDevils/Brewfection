@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var pug = require('pug');
 var serveStatic = require('serve-static');
+var app = express();
 const { Pool, Client } = require('pg')
 const pool = new Pool({
     connectionString: process.env.DATABASE_URL
