@@ -14,12 +14,12 @@ app.engine('pug', pug.__express);
 
 app = express();
 app.use(serveStatic(__dirname));
-app.get('/db', function (request, response) {
+app.get('/hops', function (request, response) {
     pool.query('SELECT * FROM hops', function(err, res) {
         if (err)
             { console.error(err); response.send("Error " + err); }
         else
-            { console.error(res.rows); response.send("hops \n" + JSON.stringify(res.rows)); }
+            { console.error(res.rows); response.send("hops \n" + JSON.stringify(res.rows, 2)); }
     });
 });
 var port = process.env.PORT || 5000;
