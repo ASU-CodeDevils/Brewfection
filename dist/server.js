@@ -14,7 +14,7 @@ app.get('/db', function (request, response) {
         if (err)
             { console.error(err); response.send("Error " + err); }
         else
-            { response.render('pages/db', {results: result.rows} ); }
+            { response.render('pages/db', {results: res.rows} ); }
     });
 });
 var port = process.env.PORT || 5000;
