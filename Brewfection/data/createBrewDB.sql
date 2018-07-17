@@ -100,7 +100,7 @@ CREATE TABLE style_of_recipe(
 CREATE TABLE grain_in_recipe(
   grain_id INT NOT NULL,
   recipe_id INT NOT NULL,
-  amount INT NOT NULL,
+  amount NUMERIC NOT NULL,
   PRIMARY KEY (grain_id, recipe_id),
   FOREIGN KEY (recipe_id)
   REFERENCES beer_recipe(id)
@@ -113,7 +113,7 @@ CREATE TABLE grain_in_recipe(
 CREATE TABLE hops_in_recipe(
   hops_id INT NOT NULL,
   recipe_id INT NOT NULL,
-  amount INT NOT NULL,
+  amount NUMERIC NOT NULL,
   exposure_time INT NOT NULL,
   PRIMARY KEY (hops_id, recipe_id, exposure_time),
   FOREIGN KEY (recipe_id)
